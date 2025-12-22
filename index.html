@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <title>Welding Services & Steelworks | Modern Steel Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Welding Services & Steelworks">
+    <meta property="og:description" content="Professional welding, steel fabrication & modern steel designs built to last.">
+    <meta property="og:image" content="images/gate.jpg">
+    <meta property="og:type" content="website">
 </head>
+
 <body>
+<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v24.0">
+    </script>
+<!-- FACEBOOK SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
+</script>
 
 <header class="hero">
     <nav>
         <h1>Welding<span>Services</span></h1>
+
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#quote">Quote</a></li>
         </ul>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/YOUR_PAGE" target="_blank">Facebook</a>
+            <a href="https://twitter.com/JacobsWelding" target="_blank">Twitter</a>
+        </div>
     </nav>
 
     <div class="hero-content">
@@ -56,36 +82,70 @@
 <section id="gallery" class="gallery">
     <h2>Our Work</h2>
     <div class="gallery-grid">
-        <img src="images/security_gates.jpg" alt="Steel Gate">
-        <img src="images/steel_fencing.jpg" alt="Steel Fencing">
-        <img src="images/Balustrade.png" alt="Balustrade">
-        <img src="images/burglar_guards.png" alt="Burglar Proofing">
-        <img src="images/carport2.png" alt="Carport">
-        <img src="images/awning.png" alt="Awning">
-        <img src="images/balustrade.jpg" alt="Balustrade">
-        <img src="images/carport.png" alt="Carport">
+        <img src="images/security_gates.jpg">
+        <img src="images/steel_fencing.jpg">
+        <img src="images/burglar_guards.png">
+        <img src="images/carport.png">
     </div>
 </section>
 
-<!-- 🔥 QUOTE FORM -->
+<!-- 🔥 SOCIAL WALL -->
+<section class="social-wall">
+    <h2>Social Wall</h2>
+    <p>Our latest updates across social media</p>
+
+    <div class="social-wall-grid">
+
+        <!-- Facebook -->
+        <div class="social-card">
+            <h3>Facebook</h3>
+            <div class="fb-page"
+                 data-href="https://www.facebook.com/carports.patiosawnings"
+                 data-tabs="timeline"
+                 data-height="500"
+                 data-small-header="true"
+                 data-adapt-container-width="true">
+            </div>
+        </div>
+
+        <!-- Twitter / X -->
+        <div class="social-card">
+            <h3>Twitter / X</h3>
+            <a class="twitter-timeline"
+               data-theme="dark"
+               data-height="500"
+               href="https://twitter.com/JacobsWelding">
+               Tweets by YOUR_HANDLE
+            </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="social-card">
+            <h3>Instagram</h3>
+            <iframe
+                src="https://www.instagram.com/YOUR_INSTAGRAM/embed"
+                width="100%"
+                height="500"
+                frameborder="0"
+                scrolling="no">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
 <section id="quote" class="contact">
     <h2>Request a Quote</h2>
-    <p>Fill in once, choose how to send</p>
 
-    <form id="quoteForm">
+    <form>
         <input type="text" id="name" placeholder="Your Name" required>
-        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
         <input type="text" id="service" placeholder="Service Required" required>
         <textarea id="message" placeholder="Additional Details"></textarea>
 
         <div class="button-group">
-            <button type="button" class="btn whatsapp" onclick="sendWhatsApp()">
-                Send via WhatsApp
-            </button>
-
-            <button type="button" class="btn messenger" onclick="sendMessenger()">
-                Send via Facebook Messenger
-            </button>
+            <button type="button" class="btn whatsapp" onclick="sendWhatsApp()">WhatsApp</button>
+            <button type="button" class="btn messenger" onclick="sendMessenger()">Messenger</button>
         </div>
     </form>
 </section>
@@ -99,9 +159,7 @@
 </footer>
 
 <script src="script.js"></script>
+<script async src="https://platform.twitter.com/widgets.js"></script>
+
 </body>
 </html>
-
-
-        
-    
